@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "57223651225",
+    "firebase_url": "https://fir-vendor-4cb60.firebaseio.com",
+    "project_id": "fir-vendor-4cb60",
+    "storage_bucket": "fir-vendor-4cb60.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:57223651225:android:a12fb8f567945147b5fd08",
+        "android_client_info": {
+          "package_name": "com.aplicando.food_app_course_resto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "57223651225-8asf7ssmjlavgssrm447m71ngncu6o73.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aplicando.food_app_course_resto",
+            "certificate_hash": "dbbc0d534c4a03f861018faa738b9a8b658fcdc8"
+          }
+        },
+        {
+          "client_id": "57223651225-tpgjk078k7l8h2pk0n5ducvs8i12m2r4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuWpqU_HUYqyZJwrl8EOvOrWbOxNy9FYQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "57223651225-tpgjk078k7l8h2pk0n5ducvs8i12m2r4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
