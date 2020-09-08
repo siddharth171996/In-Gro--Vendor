@@ -13,6 +13,7 @@ import 'package:food_app_course_resto/widgets/product.dart';
 import 'package:food_app_course_resto/widgets/small_floating_button.dart';
 import 'package:provider/provider.dart';
 import 'package:transparent_image/transparent_image.dart';
+import 'package:food_app_course_resto/screens/category.dart';
 
 import 'add_product.dart';
 
@@ -61,8 +62,8 @@ class DashboardScreen extends StatelessWidget {
 
             ListTile(
               onTap: () {},
-              leading: Icon(Icons.shop),
-              title: CustomText(text: "My Shop"),
+              leading: Icon(Icons.restaurant),
+              title: CustomText(text: "My restaurant"),
             ),
 
             ListTile(
@@ -71,6 +72,14 @@ class DashboardScreen extends StatelessWidget {
               },
               leading: Icon(Icons.bookmark_border),
               title: CustomText(text: "Orders"),
+            ),
+
+            ListTile(
+              onTap: () {
+                changeScreen(context, CategoryScreen());
+              },
+              leading: Icon(Icons.category),
+              title: CustomText(text: "Category"),
             ),
 
             ListTile(

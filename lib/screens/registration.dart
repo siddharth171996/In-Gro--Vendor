@@ -38,7 +38,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                Image.asset("images/ingro.png", width: 120, height: 80,),
+                Image.asset("images/logo.png", width: 100, height: 100,),
               ],
             ),
 
@@ -58,7 +58,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                     controller: authProvider.name,
                     decoration: InputDecoration(
                         border: InputBorder.none,
-                        hintText: "Shop name",
+                        hintText: "Restaurant name",
                         icon: Icon(Icons.restaurant)
                     ),
                   ),),

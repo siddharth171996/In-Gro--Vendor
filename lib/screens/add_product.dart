@@ -9,6 +9,7 @@ import 'package:food_app_course_resto/widgets/custom_text.dart';
 import 'package:food_app_course_resto/widgets/loading.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:provider/provider.dart';
+import 'package:dropdownfield/dropdownfield.dart';
 
 class AddProductScreen extends StatefulWidget {
   @override
@@ -25,6 +26,12 @@ class _AddProductScreenState extends State<AddProductScreen> {
     final appProvider = Provider.of<AppProvider>(context);
     final userProvider = Provider.of<UserProvider>(context);
 
+    String catgegory_id;
+    List<String> catgegory = [
+      "Beverages",
+      "Dairy",
+      "Fruites & Vegitables",
+    ];
 
 
     return Scaffold(
@@ -196,6 +203,41 @@ class _AddProductScreenState extends State<AddProductScreen> {
               ),
             ),
           ),
+
+
+          Padding(
+            padding: const EdgeInsets.only(left: 12, right: 12, bottom: 12),
+            child: Container(
+              decoration: BoxDecoration(
+                  color: white,
+                  border: Border.all(color: black, width: 0.2),
+                  borderRadius: BorderRadius.circular(20),
+                  boxShadow: [
+                    BoxShadow(
+                        color: grey.withOpacity(0.5),
+                        offset: Offset(2, 7),
+                        blurRadius: 7)
+                  ]),
+              child: Container(
+                padding: EdgeInsets.all(15.0),
+                child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: <Widget>[
+                      DropDownField(
+                        onValueChanged: (dynamic value) {
+                          catgegory_id = value;
+                        },
+                        value: catgegory_id,
+
+                        hintText: 'Choose a category',
+                        labelText: 'Category',
+                        items: catgegory,
+                      ),
+                    ]),
+              ),
+            ),
+          ),
+
           Padding(
             padding: const EdgeInsets.only(left: 12, right: 12, bottom: 12),
             child: Container(
@@ -249,6 +291,13 @@ class _AddProductScreenState extends State<AddProductScreen> {
               ),
             ),
           ),
+
+
+
+
+
+
+
           Padding(
             padding: const EdgeInsets.only(left: 12, right: 12, bottom: 12),
             child: Container(

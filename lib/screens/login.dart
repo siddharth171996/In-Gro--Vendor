@@ -38,7 +38,7 @@ class _LoginScreenState extends State<LoginScreen> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                Image.asset("images/ingro.png", width: 120, height: 80,),
+                Image.asset("images/logo.png", width: 120, height: 120,),
               ],
             ),
 
