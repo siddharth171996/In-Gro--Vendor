@@ -59,7 +59,7 @@ class _AddProductScreenState extends State<AddProductScreen> {
                   child: productProvider?.productImage == null
                       ? CustomFileUploadButton(
                           icon: Icons.image,
-                          text: "Add image",
+                          text: "Add image 1",
                           onTap: () async {
                             showModalBottomSheet(
                                 context: context,
